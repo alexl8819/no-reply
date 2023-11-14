@@ -20,7 +20,7 @@ export default class EmailChannel extends Channel {
 
     this._ev = new EmailValidation({
       allowDisposable: config.allowDisposable || false,
-      allowFreemail: config.allowFreemail || false,
+      allowFreemail: config.allowFreemail || true,
     });
     this._transporter = transporter;
   }
