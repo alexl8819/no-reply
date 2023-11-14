@@ -1,17 +1,17 @@
 import validateNANumber from 'validate-na-number';
 
-import { generateNumericCode } from '../code';
+// import { generateNumericCode } from '../code';
 import Channel from '../channel';
 
 export default class SMSChannel extends Channel {
-  constructor (transporter, config) {
+  constructor (config) {
     super(config);
 
-    this._transporter = transporter;
+    // this._transporter = transporter;
   }
 
   // Flow: User clicks link or submits code to finish verification
-  async verify (number) {
+  async verify () {
   }
 
   validate () {
@@ -19,7 +19,7 @@ export default class SMSChannel extends Channel {
   }
 
   // Flow: Code is generated and verify link is deployed to SMS
-  async deploy (to) {
+  async deploy () {
   }
 
   async cleanup () {
@@ -31,9 +31,9 @@ export default class SMSChannel extends Channel {
     return validateNANumber(input);
   }
 
-  static async open (config) {
+  static async open () {
     // const transport = await initializeDialer(config);
   }
 }
 
-function initializeDialer (config) {}
+// function initializeDialer (config) {}

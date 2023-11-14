@@ -5,6 +5,7 @@
   "description": "Simple, self-hostable user validation as a service",
   "type": "module",
   "scripts": {
+    "lint": "npx eslint src/**.js --max-warnings=0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "alexl8819",
@@ -22,5 +23,8 @@
     "nodemailer": "^6.9.6",
     "stream-replace": "^1.0.0",
     "validate-na-number": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0"
   }
 }

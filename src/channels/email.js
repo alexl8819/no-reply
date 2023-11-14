@@ -75,15 +75,18 @@ export default class EmailChannel extends Channel {
         html: htmlStream
       });
     }
+
+    let ampStream;
+
     if (this._config.ampTemplate && this._config.ampTemplate.length) {
       ampStream = createReadStream(this._config.ampTemplate).pipe(replace(VERIFY_LINK_REGEX, generatedLink));
       envelope = Object.assign({}, envelope, {
         amp: ampStream
       });
     }
-    let response;
+
     try {
-      response = await this._transporter.sendMail(envelope);
+      await this._transporter.sendMail(envelope);
     } catch (err) {
       console.error(err); // TODO: use a logger
       if (htmlStream) {

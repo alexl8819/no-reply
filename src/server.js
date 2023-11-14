@@ -77,7 +77,7 @@ export default async function createServer (opts = Object.assign({}, opts, { log
   fastify.listen({ 
     host: opts.host || '0.0.0.0', 
     port: opts.port || 3000 
-  }, (err, address) => {
+  }, (err) => {
     if (err) {
       console.error(err);
       fastify.close();
