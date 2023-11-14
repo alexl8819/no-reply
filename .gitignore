@@ -1,0 +1,4 @@
+node_modules
+.vr
+config.json
+bin.js

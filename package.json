@@ -1,0 +1,26 @@
+{
+  "name": "no-reply",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Simple, self-hostable user validation as a service",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexl8819",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "delay": "^6.0.0",
+    "emailvalid": "^1.0.4",
+    "fastify": "^4.24.0",
+    "fastq": "^1.15.0",
+    "get-fqdn": "^1.0.0",
+    "graceful-goodbye": "^1.3.0",
+    "level-party": "^5.1.1",
+    "level-ttl": "^3.1.1",
+    "nanoid": "^5.0.1",
+    "nodemailer": "^6.9.6",
+    "stream-replace": "^1.0.0",
+    "validate-na-number": "^1.0.1"
+  }
+}

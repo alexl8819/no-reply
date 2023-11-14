@@ -1,0 +1,21 @@
+{
+  "smtpConfiguration": {
+    "host": "",
+    "port": 587,
+    "secure": true,
+    "auth": {
+      "user": "",
+      "pass": ""
+    },
+    "tls": {
+      "rejectUnauthorized": false
+    }
+  },
+  "secretKey": "YOUR SECRET KEY",
+  "envelope": {
+    "customSubject": "Your Verification Code is: VERIFY_CODE",
+    "customTextMessage": "Your custom message to display if no HTML template is used (fallback)"
+  },
+  "allowDisposable": false,
+  "allowFreemail": true
+}
